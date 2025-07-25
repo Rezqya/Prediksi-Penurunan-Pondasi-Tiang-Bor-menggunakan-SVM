@@ -1,6 +1,7 @@
 streamlit
-xlswriter
+xlsxwriter
 pandas
 scikit-learn
 openpyxl
 joblib
+
