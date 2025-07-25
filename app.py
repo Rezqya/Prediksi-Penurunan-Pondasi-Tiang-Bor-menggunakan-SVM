@@ -27,8 +27,11 @@ jenis_tanah_num = le.transform([jenis_tanah])[0]
 n_spt_p = st.number_input("Nilai N-SPT(p)", min_value=0.0)
 n_spt_s = st.number_input("Nilai N-SPT(s)", min_value=0.0)
 L = st.number_input("Panjang tiang (L)", min_value=0.0, format="%.2f")
+st.caption("m")
 D = st.number_input("Diameter tiang (D)", min_value=0.0, format="%.2f")
+st.caption("m")
 Q_beban = st.number_input("Beban kerja (Q)", min_value=0.0, format="%.2f")
+st.caption("kN")
 
 if st.button("🔍 Prediksi Manual"):
     try:
@@ -70,9 +73,9 @@ template_data = {
     "Jenis_Tanah": [le.classes_[0]],
     "N-SPT(p)": [0],
     "N-SPT(s)": [0],
-    "L": [0],
-    "D": [0],
-    "Q(beban)": [0]
+    "L [m]": [0],
+    "D [m]": [0],
+    "Q(beban) [kN]": [0]
 }
 template_df = pd.DataFrame(template_data)
 
