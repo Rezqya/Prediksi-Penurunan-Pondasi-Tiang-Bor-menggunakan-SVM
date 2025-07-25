@@ -1,0 +1,1 @@
+# Prediksi-Penurunan-Pondasi-Tiang-Bor-menggunakan-SVM
